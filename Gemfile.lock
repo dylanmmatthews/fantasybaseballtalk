@@ -199,7 +199,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   paperclip
-  pg (~> 0.15)
+  pg
   rails (= 4.2.6)
   rails_admin
   sass-rails (~> 5.0)
