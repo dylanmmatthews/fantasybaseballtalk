@@ -42,6 +42,7 @@ gem 'kaminari'
 
 gem 'paperclip'
 gem 'ckeditor'
+gem 'bootstrap-sass'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

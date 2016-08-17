@@ -1,0 +1,22 @@
+= render "layouts/global_header"
+
+#latest-blog-wrapper
+  .screen
+    .latest-post
+      - @latest_post.each do |post|
+        %a{href: post_path(:id => post.id)}
+          %h1= post.title
+          %h3= "#{post.author.author}"
+          = image_tag("#{post.hero_image}")
+
+#posts-wrapper
+  = will_paginate @posts, page_links: false
+  .keep-posts-inline
+    - @posts.each do |post|
+      %a{href: post_path(:id => post.id)}
+        .posts
+          =image_tag("#{post.hero_image}")
+          .textbox
+            %p.category= "#{post.category.category}"
+            %p.title= post.title
+

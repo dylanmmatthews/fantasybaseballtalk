@@ -3,21 +3,25 @@
   background-color: #3b5998;
   padding: 20px 0;
 
-	h2 {
-    margin: 0;
-    font-size: 34px;
-    line-height: 50px;
-    font-weight: 600;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-family: sans-serif;
-	}
+  a {
+    text-decoration: none;
 
-  .mlb-logo {
-    height: 75px;
+  	h2 {
+      margin: 0;
+      font-size: 34px;
+      line-height: 50px;
+      font-weight: 600;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-family: sans-serif;
+  	}
 
-    img {
-      height: 100%;
+    .mlb-logo {
+      height: 75px;
+
+      img {
+        height: 100%;
+      }
     }
   }
 }

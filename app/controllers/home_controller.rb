@@ -4,10 +4,6 @@ class HomeController < ApplicationController
 		get_show_posts
 	end
 
-	def post
-		@post = BlogPost.find(params[:id])
-	end
-
 	private
 
 	def get_show_posts

@@ -1,0 +1,10 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: all-things-fantasy-bb_development
+  pool: 5
+  username: 
+  password: 
+  template: template0
+  host: localhost
+  port: 5432

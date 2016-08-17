@@ -1,0 +1,24 @@
+= render 'layouts/global_header'
+
+
+
+#outside-wrapper
+  #inner-wrapper
+
+    .title-of-page
+      %h1 Fantasy Baseball Blog Posts
+      %p Our authors work hard on creating quality content based on fantasy baseball keeper leagues. Many of our authors have competed and had success doing so as an active owner. Although you may not agree with all content present, we encourage you to comment and share your opinion. <i>Users who post foul or obscene language will be blocked from commenting on the board.</i> Enjoy!
+
+    .all-the-posts
+      - @posts.each do |post|
+        %a{href: blog_post_path(:id => post.id)}
+          .posts
+            %p= post.title
+            =image_tag("#{post.hero_image}")
+            .textbox
+              .category-box
+                %span.category= "#{post.category.category}"
+            .body-text
+              %p= truncate("#{post.body.html_safe}", length: 350)
+
+
