@@ -1,0 +1,16 @@
+= render 'layouts/global_header'
+
+#outer-wrapper
+  .screen
+    #blog-wrapper
+      .title
+        %h1= @post.title
+      .image
+        =image_tag("#{@post.hero_image}")
+      .author
+        %span By:
+        %span= "#{@post.author.author}"
+      .body
+        %p= @post.body.html_safe
+
+

@@ -24,12 +24,19 @@
       }
     }
   }
+  .blog-post {
+
+    a {
+      font-size: 20px;
+      color: white;
+      text-decoration: underline;
+    }
+  }
 }
 
 #latest-blog-wrapper {
   background: url('/assets/background-bb-image.jpg') 0 0 no-repeat;
   background-size: cover;
-  background-color: rgba(0,0,0,.5);
   overflow: auto;
 
   .screen {
@@ -61,7 +68,7 @@
 }
 
 #posts-wrapper {
-  background-color: #ffffff;
+  background-color: #bfbfbf;
   border-bottom-style: double;
   border-bottom-color: black;
 

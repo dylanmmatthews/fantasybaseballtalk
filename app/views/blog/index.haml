@@ -19,6 +19,6 @@
               .category-box
                 %span.category= "#{post.category.category}"
             .body-text
-              %p= truncate("#{post.body.html_safe}", length: 350)
+              %p= truncate(post.body, length: 350, separator: ' ').html_safe
 
 
