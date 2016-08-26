@@ -20,3 +20,24 @@
             %p.category= "#{post.category.category}"
             %p.title= post.title
 
+#chat-room-link
+  %span Do you want to chat with other fantasy Minds? 
+  %a.span.link{href: "/chat"} Click Here!
+  %h1 This board is for general fantasy baseball knowledge! I know, you have wanted to talk with the best fantasy minds out there.. Well I can't guarentee anyone in here knows a thing. But hey! Let's chat regardless!
+
+
+:javascript
+  $(document).ready(function () {
+    $('.latest-post a').mouseenter(function () {
+      $('h1').css("color", "red");
+    });
+    $('.latest-post a').mouseout(function () {
+      $('h1').css("color", "#ffffff");
+    });
+    $('.latest-post a').mouseenter(function () {
+      $('h3').css("color", "red");
+    });
+    $('.latest-post a').mouseout(function () {
+      $('h3').css("color", "#ffffff");
+    });
+  });

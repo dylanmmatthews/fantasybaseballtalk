@@ -30,6 +30,10 @@
       font-size: 20px;
       color: white;
       text-decoration: underline;
+
+      &:hover {
+        color: #bfbfbf;
+      }
     }
   }
 }
@@ -69,52 +73,102 @@
 
 #posts-wrapper {
   background-color: #bfbfbf;
-  border-bottom-style: double;
-  border-bottom-color: black;
 
   .keep-posts-inline {
     display: -webkit-box;
     width: 1090px;
     margin: auto;
 
+    a {
+      text-decoration: none;
 
-    .posts {
-      width: 270px;
-      padding: 25px 55px;
-      text-align: center;
+      .posts {
+        width: 270px;
+        padding: 25px 55px;
+        text-align: center;
 
-      img {
-        width: 100%;
-        height: 250px;
-      }
+        img {
+          width: 100%;
+          height: 250px;
+        }
 
-      .textbox {
-        background-color: lightblue;
-        margin-top: -4px;
+        .textbox {
+          background-color: lightblue;
+          margin-top: -4px;
 
-        p {
-          margin: 0;
+          p {
+            margin: 0;
 
-          &.category {
-            padding-top: 10px;
-            color: blue;
-            font-weight: 600;
-            text-decoration: underline;
-          }
+            &.category {
+              padding-top: 10px;
+              color: blue;
+              font-weight: 600;
+              text-decoration: underline;
+            }
 
-          &.title {
-            color: darkgrey;
-            padding-bottom: 10px;
+            &.title {
+              color: darkgrey;
+              padding-bottom: 10px;
+            }
           }
         }
       }
     }
   }
   .pagination {
-    margin: 10px 0;
+    padding: 10px 0 0;
+    margin: 0;
     text-align: center;
     color: blue;
     font-family: sans-serif;
     font-size: 22px;
   }
 }
+
+#chat-room-link {
+  padding: 50px 100px;
+  background-color: #3b5998;
+
+  span {
+    font-size: 42px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #000;
+  }
+
+  a.span.link {
+    color: #000;
+    font-size: 42px;
+    font-family: sans-serif;
+    font-weight: 600; 
+    text-decoration: underline;
+
+   &:hover {
+    color: #bfbfbf;
+   }
+  }
+
+  h1 {
+    color: #bfbfbf;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

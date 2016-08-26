@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 get 'blog', to: 'blog#index'
 get 'blog/post/:id', to: 'blog#post', as: 'blog_post'
 
+get 'chat', to: 'chatroom#index'
+
 root 'home#index'
 
 resources :home
